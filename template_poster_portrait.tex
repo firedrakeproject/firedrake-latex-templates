@@ -46,6 +46,8 @@
 	\coauthorlogo{Grey_16-9.pdf} % Not specifying the optional parameter will make the logo the same height as the Imperial logo
 }
 
+\usepackage{tikz}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -55,6 +57,12 @@
 %----------------------------------------------------------------------------------------
 
 \titlesection % Output the title section, automatically populated using the information in the POSTER INFORMATION block above
+
+% Firedrake in the top right
+\begin{tikzpicture}[remember picture, overlay]
+  \node [anchor=south east,inner sep=0pt,xshift=-5cm,yshift=-6cm]  at (current page.north east)
+     {\includegraphics[height=5cm]{firedrake.png}};
+\end{tikzpicture}
 
 \begin{multicols}{3} % Start the three-column layout
 	
@@ -175,6 +183,12 @@
 \newpage
 
 \titlesection % Output the title section, automatically populated using the information in the POSTER INFORMATION block above
+
+% Firedrake in the top right
+\begin{tikzpicture}[remember picture, overlay]
+  \node [anchor=south east,inner sep=0pt,xshift=-5cm,yshift=-6cm]  at (current page.north east)
+     {\includegraphics[height=5cm]{firedrake.png}};
+\end{tikzpicture}
 
 \begin{multicols}{3} % Start the three-column layout
 	
